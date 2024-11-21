@@ -8,60 +8,36 @@
     <title>Fu3.three Design services</title>
     <style>
         * {
-            /* 取消預設邊界 */
             margin: 0;
-            /* 取消預設縮排 */
             padding: 0;
-            /* 字型設定 */
             font-family: 微軟正黑體;
         }
 
         .wrap {
-            /* 固定寬度 */
             width: 1200px;
-
-            /* 段隨著網頁移動: div 的網頁(頁邊)置中對齊 */
             margin: auto;
-            /* 文字及物件的置中對齊 */
-            /* text-align: center; */
-
         }
 
         body {
             background-color: rgb(235, 235, 235);
             color: #173842;
-
-
         }
 
         .header {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(0, 255, 221); */
-
-            /* 寬度 */
             width: 1200px;
-            /* 高度 */
             height: 110px;
-            /* 定位基準點 */
             position: relative;
         }
 
         .header img {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(0, 255, 221); */
-            /* 寬度 */
             width: 90px;
-            /* 高度 */
             height: 90px;
-
             position: absolute;
             left: 20px;
             top: 10px;
         }
 
-
         .header h1 {
-            /* 首頁區-左側超連結清單水平排列 */
             position: absolute;
             left: 120px;
             top: 30px;
@@ -69,60 +45,35 @@
 
 
         .header h1 a {
-            /* 首頁區左側超連結色彩 */
-            /* 選單區超連結底線:取消 */
             text-decoration: none;
-            /* 超連結字體顏色 */
             color: #173842;
         }
 
-
         .header ul {
-            /* 首頁區-右側選單區超連結 */
-            /* 補充說明：設定absolute後，position: relative會尋找position: absolute 作為絕對定位 */
             position: absolute;
             right: 20px;
             top: 50px;
-
-            /* 取消項目符號 */
             list-style: none;
-
         }
 
         .header ul li {
-            /* 首頁區-右側選單區超連結清單水平排列 */
-            /* 浮動屬性(貼齊父容器的左內緣) */
             float: left;
-            /* 設定元素與元素之間的右邊界間距 */
             margin-right: 20px;
         }
 
-
         .header ul li a {
-            /* 首頁區-右側選單區超連結色彩 */
-            /* 選單區超連結底線:取消 */
             text-decoration: none;
-            /* 超連結字體顏色 */
             color: #173842;
-            /* 字體大小 */
             font-size: 15px
         }
 
         .header ul li a:hover {
-            /* 背景色 */
-            /* background-color: orange; */
-            /* 字體色 */
             color: #4091aa;
         }
 
         .blank {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(208, 255, 0); */
-            /* 寬度 */
             width: 1200px;
-            /* 高度 */
             height: 100px;
-            /* 字體大小 */
             font-size: 30px;
         }
 
@@ -131,53 +82,32 @@
         }
 
         .blank2 {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(208, 255, 0); */
-            /* 寬度 */
             width: 1200px;
-            /* 高度 */
             height: 100px;
-            /* 字體大小 */
             font-size: 28px;
             margin-left: 40px;
-            /* padding-left: 100px; */
         }
 
         .blank2 p {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(208, 255, 0); */
-
             margin-top: 50px;
-
         }
 
-        /* 身體區 */
         .mind {
             width: 1200px;
             height: auto;
-            /* 放大字體 */
             font-size: 20px;
-            /* 行距-單位為 行 因此不需要輸入單位 */
             padding-bottom: 20px;
             line-height: 1.6;
         }
 
         .box1 {
             width: 1200px;
-
-            /* margin: auto; */
-            /* margin-top: 50px; */
-            /* margin-bottom: 25px; */
             display: flex;
             flex-direction: row;
             justify-content: space-between;
         }
 
-
-
         .services {
-            /* border: 1px solid rgb(208, 255, 0); */
-
             width: 500px;
             padding-top: 18px;
             margin-left: 60px;
@@ -186,42 +116,27 @@
         }
 
         .services p {
-            /* 寬度 */
             width: 450px;
-            /* 高度 */
-            /* height: 140px; */
-            /* padding-top: 70px; */
-            /* 字體大小 */
             font-size: 25px;
             text-align: left;
             margin-right: 50px;
-            
-            
         }
 
         .text {
-            /* border: 1px solid rgb(255, 123, 0); */
-
             width: 500px;
             height: 400px;
             padding-top: 18px;
-
             align-self: flex-start;
             text-align: center;
-            
-            /* align-self: flex-end; */
         }
         .logo {
             width: 500px;
             height: 500px;
             margin-right: 80px;
-        
         }
         .logo img {
             width: 400px;
             height: 320px;
-            /* margin-left: 5px; */
-            /* margin-right: 5px; */
         }
         .poster {
             width: 400px;
@@ -251,6 +166,7 @@
             padding-bottom: 100px;
         
         }
+
         .ig img {
             width: 500px;
             height: 400px;
@@ -260,7 +176,6 @@
         .banner1 img {
             width: 370px;
             height: 70px;
-            /* margin-top: 70px; */
         }
         .banner2 img {
             width: 370px;
@@ -268,7 +183,6 @@
             margin-top: 10px;
         }
        
-
         .illustration img {
             width: 430px;
             height: 300px;
@@ -290,90 +204,46 @@
         }
 
         .footer {
-            /* 對齊線 border */
-            /* border: 1px solid red; */
-            /* 寬度 */
             width: 1200px;
-            /* 高度 */
-            /* height: 200px; */
-
-
         }
 
         .footer .nav ul {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(208, 255, 0); */
-            /* 項目清單選項 ● 取消 */
             list-style: none;
-
-            /* 設定元素內容與元素自身上邊界的間距 */
             padding-top: 10px;
-            /* 設定元素內容與元素自身下邊界的間距 */
             padding-bottom: 10px;
-            /* display: inline; */
-
         }
 
         .footer .nav ul li {
-            /* 對齊線 border */
-            /* border: 1px solid red; */
-
-            /* 水平排列 */
             display: inline-block;
-
-            /* 外間距=> margin */
             margin-left: 150px;
-
         }
 
         .footer .nav ul li a {
-            /* 選單區超連結 */
-            /* 選單區超連結文字顏色 */
             color: #173842;
             font-size: 16px;
-            /* 選單區超連結底線:取消 */
             text-decoration: none;
-            /* 內間距(縮排)=> padding */
-            /* 順時針方向設定 上 右 下 左  */
-            /* padding: 10px 20px 10px 20px; */
             padding: 10px 20px;
-
-            /* 外間距=> margin */
             margin-left: 10px;
         }
 
         .footer .nav ul li a img {
-            /* 對齊線 border */
-            /* border: 1px solid red; */
-
-            /* 寬度 */
             width: 20px;
-            /* 高度 */
             height: 20px;
-            /* 靠右對齊 */
             float: right;
-            /* 行內區塊可水平排列 */
             display: inline-block;
-            /* 外間距=> margin */
             margin-right: 5px;
-
-
         }
+
     </style>
 
 </head>
 
 <body>
     <div class="wrap">
-
-        <!-- 頭 -->
         <div class="header">
-            <!-- 圖片連結(尚未設置點擊轉跳首頁) -->
             <div class="fu3 three_icon"><a href="./index.html"><img src="./images/icon_fu3.three.png" alt="fu3.three_icon"></a>
             </div>
-            <!-- 右上方FU3.THREE (尚未設置點擊轉跳首頁) -->
             <h1><a href="./index.html"> Fu3.three</a></h1>
-            <!-- 選單區 -->
             <div class="nav">
                 <ul>
                     <li><a href="./index.html">首頁</a></li>
@@ -383,55 +253,41 @@
                     <li><a href="./contact.html">聯絡方式</a></li>
                 </ul>
             </div>
-
         </div>
-        <!-- 空白區 -->
         <div class="blank">
-            <!-- 分隔線 -->
             <hr>
             <p>
                 <h1>服務項目</h1>
             </p>
-            <!-- 留白，輔助對齊用 -->
         </div>
         <div class="blank2">
-            <!-- 分隔線 -->
             <p>
                 <h2>平面設計</h2>
             </p>
-            <!-- 留白，輔助對齊用 -->
         </div>
-        <!-- 身體 -->
         <div class="mind">
             <div class="box1">
-
                 <div class="services">
-
                     <p>
                         <h3>LOGO設計</h3>
                         <br> 我們的LOGO設計服務專為有設計需求的客戶提供全方位的創意解決方案。從品牌定位到視覺傳達，我們將深入了解您的品牌理念與目標，設計獨特且具辨識度的LOGO，幫助您的品牌在市場中脫穎而出。我們的設計不僅符合美學標準，還注重品牌價值的傳遞，確保LOGO能夠與消費者產生情感共鳴，並有效提升品牌形象。無論是創業新品牌還是重塑現有品牌形象，我們都能提供專業的設計支持。</p>
                 </div>
                 <div class="text">
                     <div class="logo"> <img src="./images/logo_6.png" alt=""></div>
-
                 </div>
             </div>
             <div class="box1">
                     <div class="text">
                             <div class="poster"> <img src="./images/poster_2_1.png" alt=""><img src="./images/poster_2_2.png" alt=""></div>
-        
                         </div>
                 <div class="services">
-
                     <p>
                         <h3>海報設計</h3>
                         <br>我們的海報設計服務專為有設計需求的客戶量身打造，提供從創意構思到最終成品的全流程設計支持。我們根據品牌定位和活動需求，打造具視覺衝擊力且富有故事性的海報，確保每個細節都能吸引目標受眾的目光。我們的設計不僅注重美學，還兼顧功能性，幫助客戶有效傳達信息，提升品牌形象與市場影響力，無論是促銷活動、展覽展示還是品牌宣傳，都能為您提供專業的設計解決方案。</p>
                 </div>
-               
             </div>
             <div class="box1">
                 <div class="services">
-
                     <p>
                         <h3>產品包裝設計</h3>
                         <br>
@@ -440,7 +296,6 @@
                 </div>
                 <div class="text">
                     <div class="package"><img src="./images/package_4.png" alt=""> <img src="./images/package_3.png" alt=""></div>
-
                 </div>
             </div>
             <div class="box1">
@@ -449,18 +304,14 @@
         
                         </div>
                 <div class="services">
-
                     <p>
                         <h3>社群廣告設計</h3>
                         <br>我們的IG社群廣告設計服務專為有設計需求的客戶提供創意與策略的結合，幫助您的品牌在社群平台中脫穎而出。我們根據品牌定位與目標受眾，設計出具吸引力且具高度互動性的廣告內容，提升品牌曝光與轉換率。從視覺設計到文案撰寫，我們提供全方位的社群廣告設計，確保每一個細節都能有效引起目標客群的關注與共鳴，促進品牌的長期發展與顧客關係。
                     </p>
                 </div>
-
-
             </div>
             <div class="box1">
                 <div class="services">
-
                     <p>
                         <h3>網頁橫幅（Web Banner）</h3>
                         <br>
@@ -472,101 +323,75 @@
                     <div class="banner2" > <img src="./images/banner_3.png " alt=" "></div>
                 </div>
             </div>
-
             <br>
             <hr>
             <div class="blank2 ">
-                <!-- 分隔線 -->
                 <p>
                     <h2>插畫-手繪設計</h2>
                 </p>
-                <!-- 留白，輔助對齊用 -->
             </div>
-            <!-- 身體 -->
             <div class="mind ">
                 <div class="box1 ">
-
                     <div class="services">
-
                         <p>
                             <h3>插畫｜插圖</h3>
-                            
                             <br>
-                            
                             我們的手繪插畫設計服務專為有設計需求的客戶提供獨特且富有創意的插圖解決方案。我們的插畫設計融合藝術性與功能性，根據品牌需求創作出具個性化的圖像，幫助提升品牌形象或傳達特定訊息。無論是產品包裝、書籍插圖、廣告素材還是社群內容，我們的手繪風格能為您的品牌注入溫暖與故事感，吸引目標客群的注意並激發情感共鳴，增強品牌的視覺吸引力與市場競爭力。</p>
                     </div>
                     <div class="text ">
                         <div class="illustration "> <img src="./images/illustration_2.PNG " alt=" "></div>
-
                     </div>
                 </div>
                 <div class="box1 ">
                         <div class="text ">
                                 <div class="people "> <img src="./images/people_4.PNG " alt=" "></div>
-        
                             </div>
                     <div class="services ">
-
                         <p>
                             <h3>人像似顏繪</h3>
                             <br>
                             我們的手繪人像似顏繪設計服務，專為有設計需求的客戶提供個性化的插畫創作。我們將根據您的需求，精心繪製獨特的肖像插圖，無論是作為個人禮物、品牌形象、社交媒體內容或商業用途，都能為您的項目增添獨特魅力。每幅插畫都結合細膩的手繪風格與現代視覺表現，捕捉人物特徵與情感，幫助您在視覺上建立深刻印象，強化品牌識別度或提供有溫度的個性化服務。
                         </p>
                     </div>
-
                 </div>
                 <div class="box1 ">
                     <div class="services ">
-
                         <p>
                             <h3>寵物似顏繪</h3>
                             <br>
-                            
                             我們的手繪寵物似顏繪設計服務，專為有設計需求的客戶創作獨特且富有情感的寵物插畫。無論是為了紀念心愛的寵物、個性化禮物，還是用於品牌形象、社群媒體或商品包裝，我們都能根據您的需求，精心繪製符合您寵物特徵的插畫作品。每幅插畫都融合細膩的手繪技巧與可愛的風格，為您的品牌或個人項目增添溫暖與親和力，讓寵物的可愛魅力在視覺中得到完美呈現。</p>
                     </div>
                     <div class="text ">
                         <div class="pet "> <img src="./images/pet_3.PNG " alt=" "></div>
-
                     </div>
                 </div>
                 <br>
-
                 <br>
-
             </div>
-            <!-- 腳 -->
             <div class="footer ">
-                <!-- 分隔線 -->
                 <hr>
-                <!-- 選單區 -->
                 <div class="nav ">
                     <ul>
                         <li>
                             <h4>Phone</h4>
-                            <!-- <p>0930472416</p> -->
                             <p><a href="tel:+886930472416 ">0930472416</a></p>
                         </li>
                         <li>
                             <h4>Email</h4>
-
                             <p><a href="mailto:fu3.three@gmail.com?body=傅家少女 Fu3.three 您好：這邊是 %0D%0A想委託的業務為...%0D%0A回信請回到
                         Email: ">fu3.three@gmail.com</a></p>
                         </li>
                         <li>
                             <h4>Follow Me</h4>
-
                             <p>
                                 <a href="https://www.instagram.com/fu3.three/ "><img src="./images/icon_ig.png " alt="ig "></a>
                                 <a href="https://www.facebook.com/share/qrwSodHWKgmhQJ4L/?mibextid=kFxxJD "><img src="./images/icon_fb.png "
                                         alt="FB "></a>
                             </p>
                         </li>
-
                     </ul>
-
                 </div>
             </div>
-
         </div>
 
 </body>

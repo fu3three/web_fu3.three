@@ -5,124 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fu3.three Design resume</title>
+    <title>Fu3.three Design portfolio</title>
     <style>
         * {
-            /* 取消預設邊界 */
             margin: 0;
-            /* 取消預設縮排 */
             padding: 0;
-            /* 字型設定 */
             font-family: 微軟正黑體;
         }
 
         .wrap {
-            /* 固定寬度 */
             width: 1200px;
-
-            /* 段隨著網頁移動: div 的網頁(頁邊)置中對齊 */
             margin: auto;
-            /* 文字及物件的置中對齊 */
-            /* text-align: center; */
-
         }
 
         body {
             background-color: rgb(235, 235, 235);
             color: #173842;
-
-
         }
 
         .header {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(0, 255, 221); */
-
-            /* 寬度 */
             width: 1200px;
-            /* 高度 */
             height: 110px;
-            /* 定位基準點 */
             position: relative;
         }
 
         .header img {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(0, 255, 221); */
-            /* 寬度 */
             width: 90px;
-            /* 高度 */
             height: 90px;
-
             position: absolute;
             left: 20px;
             top: 10px;
         }
 
-
         .header h1 {
-            /* 首頁區-左側超連結清單水平排列 */
             position: absolute;
             left: 120px;
             top: 30px;
         }
 
-
         .header h1 a {
-            /* 首頁區左側超連結色彩 */
-            /* 選單區超連結底線:取消 */
             text-decoration: none;
-            /* 超連結字體顏色 */
             color: #173842;
         }
 
-
         .header ul {
-            /* 首頁區-右側選單區超連結 */
-            /* 補充說明：設定absolute後，position: relative會尋找position: absolute 作為絕對定位 */
             position: absolute;
             right: 20px;
             top: 50px;
-
-            /* 取消項目符號 */
             list-style: none;
 
         }
 
         .header ul li {
-            /* 首頁區-右側選單區超連結清單水平排列 */
-            /* 浮動屬性(貼齊父容器的左內緣) */
             float: left;
-            /* 設定元素與元素之間的右邊界間距 */
             margin-right: 20px;
         }
 
-
         .header ul li a {
-            /* 首頁區-右側選單區超連結色彩 */
-            /* 選單區超連結底線:取消 */
             text-decoration: none;
-            /* 超連結字體顏色 */
             color: #173842;
-            /* 字體大小 */
             font-size: 15px
         }
 
         .header ul li a:hover {
-            /* 背景色 */
-            /* background-color: orange; */
-            /* 字體色 */
             color: #4091aa;
         }
 
         .blank {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(208, 255, 0); */
-            /* 寬度 */
             width: 1200px;
-            /* 高度 */
             height: 100px;
-            /* 字體大小 */
             font-size: 30px;
         }
 
@@ -131,53 +82,32 @@
         }
 
         .blank2 {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(208, 255, 0); */
-            /* 寬度 */
             width: 1200px;
-            /* 高度 */
             height: 100px;
-            /* 字體大小 */
             font-size: 28px;
             margin-left: 40px;
-            /* padding-left: 100px; */
         }
 
         .blank2 p {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(208, 255, 0); */
-
             margin-top: 50px;
-
         }
 
-        /* 身體區 */
         .mind {
             width: 1200px;
             height: auto;
-            /* 放大字體 */
             font-size: 20px;
-            /* 行距-單位為 行 因此不需要輸入單位 */
             padding-bottom: 20px;
             line-height: 1.6;
         }
 
         .box1 {
             width: 1200px;
-
-            /* margin: auto; */
-            /* margin-top: 50px; */
-            /* margin-bottom: 25px; */
             display: flex;
             flex-direction: row;
             justify-content: space-between;
         }
 
-
-
-        .time {
-            /* border: 1px solid rgb(208, 255, 0); */
-
+        .portfolio {
             width: 600px;
             padding-top: 18px;
             margin-left: 60px;
@@ -185,39 +115,26 @@
             align-self: flex-start;
         }
 
-        .time p {
-            /* 寬度 */
+        .portfolio p {
             width: 450px;
-            /* 高度 */
-            /* height: 140px; */
-            /* padding-top: 70px; */
-            /* 字體大小 */
             font-size: 25px;
             text-align: left;
             margin-right: 50px;
-            
-            
         }
 
         .text {
-            /* border: 1px solid rgb(255, 123, 0); */
-
             width: 400px;
             height: 400px;
             padding-top: 18px;
-
             align-self: flex-start;
             text-align: center;
-            
-            /* align-self: flex-end; */
         }
 
         .logo img {
             width: 400px;
             height: 320px;
-            /* margin-left: 5px; */
-            /* margin-right: 5px; */
         }
+
         .poster img {
             width: 180px;
             height: 270px;
@@ -231,6 +148,7 @@
             height: 220px;
             margin-top: 50px;
         }
+
         .ig img {
             width: 400px;
             height: 300px;
@@ -241,8 +159,6 @@
             height: 160px;
             margin-top: 70px;
         }
-
-       
 
         .illustration img {
             width: 300px;
@@ -256,94 +172,50 @@
 
         .pet img {
             width: 300px;
-            height: 300px;     
+            height: 300px;
         }
 
         .footer {
-            /* 對齊線 border */
-            /* border: 1px solid red; */
-            /* 寬度 */
             width: 1200px;
-            /* 高度 */
-            /* height: 200px; */
-
-
         }
 
         .footer .nav ul {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(208, 255, 0); */
-            /* 項目清單選項 ● 取消 */
             list-style: none;
-
-            /* 設定元素內容與元素自身上邊界的間距 */
             padding-top: 10px;
-            /* 設定元素內容與元素自身下邊界的間距 */
             padding-bottom: 10px;
-            /* display: inline; */
-
         }
 
         .footer .nav ul li {
-            /* 對齊線 border */
-            /* border: 1px solid red; */
-
-            /* 水平排列 */
             display: inline-block;
-
-            /* 外間距=> margin */
             margin-left: 150px;
-
         }
 
         .footer .nav ul li a {
-            /* 選單區超連結 */
-            /* 選單區超連結文字顏色 */
             color: #173842;
             font-size: 16px;
-            /* 選單區超連結底線:取消 */
             text-decoration: none;
-            /* 內間距(縮排)=> padding */
-            /* 順時針方向設定 上 右 下 左  */
-            /* padding: 10px 20px 10px 20px; */
             padding: 10px 20px;
-
-            /* 外間距=> margin */
             margin-left: 10px;
         }
 
         .footer .nav ul li a img {
-            /* 對齊線 border */
-            /* border: 1px solid red; */
-
-            /* 寬度 */
             width: 20px;
-            /* 高度 */
             height: 20px;
-            /* 靠右對齊 */
             float: right;
-            /* 行內區塊可水平排列 */
             display: inline-block;
-            /* 外間距=> margin */
             margin-right: 5px;
-
-
         }
+
     </style>
 
 </head>
 
 <body>
     <div class="wrap">
-
-        <!-- 頭 -->
         <div class="header">
-            <!-- 圖片連結(尚未設置點擊轉跳首頁) -->
             <div class="fu3 three_icon"><a href="./index.html"><img src="./images/icon_fu3.three.png" alt="fu3.three_icon"></a>
             </div>
-            <!-- 右上方FU3.THREE (尚未設置點擊轉跳首頁) -->
             <h1><a href="./index.html"> Fu3.three</a></h1>
-            <!-- 選單區 -->
             <div class="nav">
                 <ul>
                     <li><a href="./index.html">首頁</a></li>
@@ -353,34 +225,25 @@
                     <li><a href="./contact.html">聯絡方式</a></li>
                 </ul>
             </div>
-
         </div>
-        <!-- 空白區 -->
         <div class="blank">
-            <!-- 分隔線 -->
             <hr>
             <p>
                 <h1>作品集</h1>
             </p>
-            <!-- 留白，輔助對齊用 -->
         </div>
         <div class="blank2">
-            <!-- 分隔線 -->
             <p>
                 <h2>平面設計</h2>
             </p>
-            <!-- 留白，輔助對齊用 -->
         </div>
-        <!-- 身體 -->
         <div class="mind">
             <div class="box1">
-
-                <div class="time">
-
+                <div class="portfolio">
                     <p>
                         <h3>LOGO設計</h3>
                         <br> LOGO設計以簡潔的線條與獨特的圖形元素相結合，彰顯出品牌的現代感與專業形象。選擇的顏色和形狀不僅具視覺吸引力，還能有效傳達品牌的核心價值和精神。設計強調清晰、易辨識的特性，旨在加強品牌與消費者之間的連結，提升市場中的競爭力與辨識度，無論在線上還是線下環境中，都能留下深刻的印象。
-                        </p>
+                    </p>
                 </div>
                 <div class="text">
                     <div class="logo"> <img src="./images/logo_6.png" alt=""></div>
@@ -388,8 +251,7 @@
                 </div>
             </div>
             <div class="box1">
-                <div class="time">
-
+                <div class="portfolio">
                     <p>
                         <h3>海報設計</h3>
                         <br> 這張「化妝品安瓶2025 海報」巧妙地將產品作為明顯且突出的主體，化妝品安瓶在海報中央以強烈的視覺焦點呈現，精緻的設計和淸透的瓶身勾勒出其高端質感。與此同時，數字「2025」以跳耀率極高的設計方式，配合鮮明的色彩對比，成為整體構圖中的另一個亮點。海報中的每一個細節都精心呈現。這些突出的亮點不僅吸引目光，也象徵著對未來美麗的追求與承諾。
@@ -397,26 +259,21 @@
                 </div>
                 <div class="text">
                     <div class="poster"> <img src="./images/poster_1_1.png" alt=""><img src="./images/poster_1_2.png" alt=""></div>
-
                 </div>
             </div>
             <div class="box1">
-                <div class="time">
-
+                <div class="portfolio">
                     <p>
                         <h3>產品包裝設計</h3>
                         <br>此系列麵粉包裝設計以鮮明的配色與手繪插圖為特色，營造出活潑且具有藝術感的視覺效果。低筋麵粉的包裝選用黃色與粉紫色，象徵其輕盈與柔和的質地，特別適合製作精緻的蛋糕。設計簡潔而富有辨識度，讓消費者一目了然地了解產品用途，提升購買決策的效率。同時，手繪風格的插圖增添了溫暖與親和力，與產品的自然純粹形象相得益彰，展現出品牌對品質的承諾與用心。</p>
                 </div>
                 <div class="text">
                     <div class="package"> <img src="./images/package_2.png" alt=""></div>
-
                 </div>
             </div>
 
             <div class="box1">
-
-                <div class="time">
-
+                <div class="portfolio">
                     <p>
                         <h3>社群廣告設計</h3>
                         <br>這款IG社群廣告設計以草莓奶酪為主角，搭配新鮮草莓的自然鮮紅，展現甜美的夏日風味。設計上選用清新亮眼的色調和簡約時尚的排版，強調草莓和奶酪的豐富口感，讓人垂涎欲滴。每一個細節都精心打造，無論是視覺效果還是情感傳遞，都旨在吸引觀眾的目光，激發他們對美味的渴望。這樣的設計不僅能提升品牌形象，還能有效促進消費者的互動與購買慾望。
@@ -424,121 +281,89 @@
                 </div>
                 <div class="text">
                     <div class="ig"> <img src="./images/ig_1.png" alt=""></div>
-
                 </div>
-
             </div>
-            <div class="box1">
-                <div class="time">
 
+            <div class="box1">
+                <div class="portfolio">
                     <p>
                         <h3>網頁橫幅（Web Banner）</h3>
-                        <br>
-                        這款momo購物網網頁橫幅設計，突顯限時優惠的香水專區，將香氛的優雅與促銷活動的熱烈氛圍巧妙結合。設計上選用了柔和的色調和精緻的香水瓶圖像，營造出高端而誘人的視覺效果。簡潔的文字布局與明確的優惠信息，讓消費者一目了然，激發立即購買的慾望。橫幅的設計不僅強調產品的獨特魅力，也有效推動限時優惠活動的曝光與轉換，提升品牌銷售。
+                        <br> 這款momo購物網網頁橫幅設計，突顯限時優惠的香水專區，將香氛的優雅與促銷活動的熱烈氛圍巧妙結合。設計上選用了柔和的色調和精緻的香水瓶圖像，營造出高端而誘人的視覺效果。簡潔的文字布局與明確的優惠信息，讓消費者一目了然，激發立即購買的慾望。橫幅的設計不僅強調產品的獨特魅力，也有效推動限時優惠活動的曝光與轉換，提升品牌銷售。
                     </p>
                 </div>
                 <div class="text">
                     <div class="banner"> <img src="./images/banner_1.png " alt=" "></div>
-
                 </div>
             </div>
-
             <br>
             <hr>
             <div class="blank2 ">
-                <!-- 分隔線 -->
                 <p>
                     <h2>插畫-手繪設計</h2>
                 </p>
-                <!-- 留白，輔助對齊用 -->
             </div>
-            <!-- 身體 -->
             <div class="mind ">
                 <div class="box1 ">
-
-                    <div class="time ">
-
+                    <div class="portfolio">
                         <p>
                             <h3>插畫｜插圖</h3>
-                            
-                            <br>
-                            這款手繪插畫以Q版風格呈現一隻圓滾滾揮舞翅膀的公雞，表現出活潑、可愛的形象。整體插畫富有輕快與動感的氛圍，傳達出喜氣洋洋的感覺，讓觀者感受到它的活力與魅力。這款插畫非常適合應用於品牌吉祥物、商品包裝或宣傳素材，為品牌注入更多親和力與趣味性。
+                            <br> 這款手繪插畫以Q版風格呈現一隻圓滾滾揮舞翅膀的公雞，表現出活潑、可愛的形象。整體插畫富有輕快與動感的氛圍，傳達出喜氣洋洋的感覺，讓觀者感受到它的活力與魅力。這款插畫非常適合應用於品牌吉祥物、商品包裝或宣傳素材，為品牌注入更多親和力與趣味性。
                         </p>
                     </div>
                     <div class="text ">
                         <div class="illustration "> <img src="./images/illustration_1.PNG " alt=" "></div>
-
                     </div>
                 </div>
                 <div class="box1 ">
-
-                    <div class="time ">
-
+                    <div class="portfolio ">
                         <p>
                             <h3>人像似顏繪</h3>
-                            <br>
-                            這款插畫採用柔和水彩風格，描繪了一位笑容滿面的嬰兒，傳遞出溫馨、純真的情感。水彩的漸變色調和柔和筆觸，使整體畫面呈現出輕盈、夢幻的氛圍，強調嬰兒天真無邪的微笑。細緻的表情刻畫和柔和的色彩搭配，讓人感受到無限的溫暖與喜悅。這款似顏繪插畫適合應用於嬰兒相關產品、家庭紀念品或育兒品牌，為品牌形象增添更多親和力與情感共鳴。
+                            <br> 這款插畫採用柔和水彩風格，描繪了一位笑容滿面的嬰兒，傳遞出溫馨、純真的情感。水彩的漸變色調和柔和筆觸，使整體畫面呈現出輕盈、夢幻的氛圍，強調嬰兒天真無邪的微笑。細緻的表情刻畫和柔和的色彩搭配，讓人感受到無限的溫暖與喜悅。這款似顏繪插畫適合應用於嬰兒相關產品、家庭紀念品或育兒品牌，為品牌形象增添更多親和力與情感共鳴。
                         </p>
                     </div>
                     <div class="text ">
                         <div class="people "> <img src="./images/people_1.PNG " alt=" "></div>
-
                     </div>
                 </div>
                 <div class="box1 ">
-                    <div class="time ">
-
+                    <div class="portfolio ">
                         <p>
                             <h3>寵物似顏繪</h3>
-                            <br>
-                            這款插畫以寵物似顏繪風格呈現一隻笑容滿面的白色柴犬，展現出它活潑、友善的個性。精緻的線條與柔和的色調勾勒出柴犬毛茸茸的質感，明亮的眼神與愉快的表情傳遞出無限的喜悅與親和力。插畫中的笑容不僅增添了溫暖的氛圍，也使整體設計更加生動有趣。這款插畫適用於寵物品牌、個性化商品或是寵物相關活動，能夠引起愛犬人士的情感共鳴，提升品牌的親和力與可愛度。
+                            <br> 這款插畫以寵物似顏繪風格呈現一隻笑容滿面的白色柴犬，展現出它活潑、友善的個性。精緻的線條與柔和的色調勾勒出柴犬毛茸茸的質感，明亮的眼神與愉快的表情傳遞出無限的喜悅與親和力。插畫中的笑容不僅增添了溫暖的氛圍，也使整體設計更加生動有趣。這款插畫適用於寵物品牌、個性化商品或是寵物相關活動，能夠引起愛犬人士的情感共鳴，提升品牌的親和力與可愛度。
                         </p>
                     </div>
                     <div class="text ">
-                        <div class="pet "> <img src="./images/pet_1.PNG " alt=" "></div>
-
+                        <div class="pet"> <img src="./images/pet_1.PNG " alt=" "></div>
                     </div>
                 </div>
                 <br>
-
-                <br>
-
             </div>
-            <!-- 腳 -->
             <div class="footer ">
-                <!-- 分隔線 -->
                 <hr>
-                <!-- 選單區 -->
                 <div class="nav ">
                     <ul>
                         <li>
                             <h4>Phone</h4>
-                            <!-- <p>0930472416</p> -->
                             <p><a href="tel:+886930472416 ">0930472416</a></p>
                         </li>
                         <li>
                             <h4>Email</h4>
-
                             <p><a href="mailto:fu3.three@gmail.com?body=傅家少女 Fu3.three 您好：這邊是 %0D%0A想委託的業務為...%0D%0A回信請回到
                         Email: ">fu3.three@gmail.com</a></p>
                         </li>
                         <li>
                             <h4>Follow Me</h4>
-
                             <p>
                                 <a href="https://www.instagram.com/fu3.three/ "><img src="./images/icon_ig.png " alt="ig "></a>
                                 <a href="https://www.facebook.com/share/qrwSodHWKgmhQJ4L/?mibextid=kFxxJD "><img src="./images/icon_fb.png "
                                         alt="FB "></a>
                             </p>
                         </li>
-
                     </ul>
-
                 </div>
             </div>
-
         </div>
-
+        
 </body>
 
 </html>

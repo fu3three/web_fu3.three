@@ -8,25 +8,15 @@
     <title>Fu3.three Design contact</title>
     <style>
          * {
-            /* 取消預設邊界 */
             margin: 0;
-            /* 取消預設縮排 */
             padding: 0;
-            /* 字型設定 */
             font-family: 微軟正黑體;
-
         }
 
 
         .wrap {
-            /* 固定寬度 */
             width: 1200px;
-
-            /* 段隨著網頁移動: div 的網頁(頁邊)置中對齊 */
             margin: auto;
-            /* 文字及物件的置中對齊 */
-            /* text-align: center; */
-
         }
 
 
@@ -34,141 +24,79 @@
         body {
             background-color: rgb(235, 235, 235);
             color: #173842;
-
-
         }
 
         .header {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(0, 255, 221); */
-
-            /* 寬度 */
             width: 1200px;
-            /* 高度 */
             height: 110px;
-            /* 定位基準點 */
             position: relative;
         }
 
         .header img {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(0, 255, 221); */
-            /* 寬度 */
             width: 90px;
-            /* 高度 */
             height: 90px;
-
             position: absolute;
             left: 20px;
             top: 10px;
         }
 
-        /* 首頁區-左側超連結清單水平排列 */
         .header h1 {
             position: absolute;
             left: 120px;
             top: 30px;
         }
 
-        /* 首頁區左側超連結色彩 */
         .header h1 a {
-            /* 選單區超連結底線:取消 */
             text-decoration: none;
-            /* 超連結字體顏色 */
             color: #173842;
-      
         }
 
-        /* 首頁區-右側選單區超連結 */
         .header ul {
-            /* 補充說明：設定absolute後，position: relative會尋找position: absolute 作為絕對定位 */
             position: absolute;
             right: 20px;
             top: 50px;
-
-            /* 取消項目符號 */
             list-style: none;
-
         }
 
-        /* 首頁區-右側選單區超連結清單水平排列 */
         .header ul li {
-            /* 浮動屬性(貼齊父容器的左內緣) */
             float: left;
-            /* 設定元素與元素之間的右邊界間距 */
             margin-right: 20px;
         }
 
-        /* 首頁區-右側選單區超連結色彩 */
         .header ul li a {
-            /* 選單區超連結底線:取消 */
             text-decoration: none;
-            /* 超連結字體顏色 */
             color: #173842;
-            /* 字體大小 */
             font-size: 15px
         }
 
         .header ul li a:hover {
-            /* 背景色 */
-            /* background-color: orange; */
-            /* 字體色 */
             color: #4091aa;
         }
 
         .blank {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(208, 255, 0); */
-            /* 寬度 */
             width: 1200px;
-            /* 高度 */
             height: 60px;
-            /* 字體大小 */
             font-size: 30px;
-            /* margin-bottom: 50px; */
             padding-bottom: 50px;
         }
 
         .blank p {
             margin-top: 10px;
         }
-
-
         
-        /* 身體區 */
         .main {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(38, 0, 255); */
-            /* 寬度 */
             width: 1200px;
-            /* 高度 */
-            /* height: 1800px; */
             height: auto;
-
-            /* 放大字體 */
             font-size: 20px;
-            /* 行距-單位為 行 因此不需要輸入單位 */
             line-height: 1.5;
             padding-bottom: 20px;
             margin: 30px;
-
         }
-
-
 
         .main .box {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(245, 204, 23); */
-            /* 寬度 */
             width: 1200px;
-            /* 高度 */
-            /* height: 500px; */
             height: auto;
-
         }
-
-
-
         .section-title {
             font-size: 24px;
             margin-top: 40px;
@@ -187,7 +115,6 @@
         .contact-item img {
             width: 300px;
             height: 200px;
-            /* background-color: #ffffff; */
             margin-left: 20px;
         }
 
@@ -195,7 +122,6 @@
         .contact-description {
             flex: 1;
             padding: 10px;
-            /* background-color: #ffffff; */
         }
         .contact-description h2{
             font-size: 40px;
@@ -211,18 +137,13 @@
             width: 22px;
             height: 19px;
             
-            /* padding: 2px; */
-            /* margin: 3px; */
         }
-        /* 發送訊息之欄位 */
         .contact-form {
             display: flex;
             flex-direction: column;
             gap: 10px;
-            /* background-color: #ffffff; */
             padding: 20px;
             margin-top: 20px;
-            /* width: 100%; */
             width: 50%;
         }
 
@@ -245,88 +166,47 @@
 
 
         .footer {
-            /* 對齊線 border */
-            /* border: 1px solid red; */
-            /* 寬度 */
             width: 1200px;
-            /* 高度 */
-            /* height: 200px; */
-
-
         }
 
         .footer .nav ul {
-            /* 對齊線 border */
-            /* border: 1px solid rgb(208, 255, 0); */
-            /* 項目清單選項 ● 取消 */
             list-style: none;
-
-            /* 設定元素內容與元素自身上邊界的間距 */
             padding-top: 10px;
-            /* 設定元素內容與元素自身下邊界的間距 */
             padding-bottom: 10px;
-            /* display: inline; */
-
         }
 
         .footer .nav ul li {
-            /* 對齊線 border */
-            /* border: 1px solid red; */
-
-            /* 水平排列 */
             display: inline-block;
-
-            /* 外間距=> margin */
             margin-left: 150px;
-
         }
 
         .footer .nav ul li a {
-            /* 選單區超連結 */
-            /* 選單區超連結文字顏色 */
             color: #173842;
             font-size: 16px;
-            /* 選單區超連結底線:取消 */
             text-decoration: none;
-            /* 內間距(縮排)=> padding */
-            /* 順時針方向設定 上 右 下 左  */
-            /* padding: 10px 20px 10px 20px; */
             padding: 10px 20px;
-
-            /* 外間距=> margin */
             margin-left: 10px;
         }
 
         .footer .nav ul li a img {
-
-            /* 寬度 */
             width: 20px;
-            /* 高度 */
             height: 20px;
-            /* 靠右對齊 */
-            /* text-align: right; */
             float: right;
-            /* 行內區塊可水平排列 */
             display: inline-block;
-            /* 外間距=> margin */
             margin-right: 5px;
-
         }
 
     </style>
+
 </head>
 
 <body>
     <div class="wrap">
 
-        <!-- 頭 -->
         <div class="header">
-            <!-- 圖片連結(尚未設置點擊轉跳首頁) -->
             <div class="fu3 three_icon"><a href="./index.html"><img src="./images/icon_fu3.three.png" alt="fu3.three_icon"></a>
             </div>
-            <!-- 右上方FU3.THREE (尚未設置點擊轉跳首頁) -->
             <h1><a href="./index.html"> Fu3.three</a></h1>
-            <!-- 選單區 -->
             <div class="nav">
                 <ul>
                     <li><a href="./index.html">首頁</a></li>
@@ -336,34 +216,24 @@
                     <li><a href="./contact.html">聯絡方式</a></li>
                 </ul>
             </div>
-
         </div>
-        <!-- 空白區 -->
         <div class="blank">
-            <!-- 分隔線 -->
             <hr>
             <p>
                 <h1>聯絡方式</h1>
             </p>
-            <!-- 留白，輔助對齊用 -->
         </div>
 
-
-        <!-- 身體 -->
         <div class="main">
 
             <section>
                 <div class="contact-item">
                     <div class="contact-description">
                         <h2>聯絡我們</h2>
-                        <!-- <h3>Fu3.three </h3> -->
                         <br>
                         <p>若您有任何服務需求，請以Email方式或於右方欄位詳細說明，並請留下您的聯絡電話。我們收到後將會儘快與您聯絡，感謝您。</p>
                         <br>
-                        
-                        
                         <p><img src="./images/icon_mail.png" alt="icon_mail">　信箱：fu3.three@gmail.com</p>
-                        
                         <p><img src="./images/icon_phone.png" alt="icon_phone">　電話：0930472416</p>
                     </div>
                     <div class="contact-form">
@@ -376,16 +246,12 @@
             </section>
         </div>
 
-        <!-- 腳 -->
         <div class="footer">
-            <!-- 分隔線 -->
             <hr>
-            <!-- 選單區 -->
             <div class="nav">
                 <ul>
                     <li>
                         <h4>Phone</h4>
-                        <!-- <p>0930472416</p> -->
                         <p><a href="tel:+886930472416">0930472416</a></p>
                     </li>
                     <li>
@@ -408,6 +274,7 @@
             </div>
         </div>
     </div>
+    
 </body>
 
 </html>
